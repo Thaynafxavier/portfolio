@@ -12,7 +12,7 @@
 
 body {
     background-color: #000;
-    max-width: 1700px; */
+    max-width: 1700px; 
     margin: 0 auto;
 }
 
@@ -95,7 +95,6 @@ header .navegacao-primaria li a {
 }
 
 .section-div div a {
-    justify-self: ;
     color:#fff;
     padding: 15px 40px;
     border-radius: 5px;
@@ -297,3 +296,28 @@ main .sobre {
             transform: translate3d(0, 0, 0);
         }
     }
+
+    /* RESPONSIVO */
+
+    @MEDIA (Max-width: 992px) {
+        .sobre img {
+            grid-column: 1/ -1;
+            justify-self: center;
+        }
+
+        .sobre_conteudo {
+            max-width: 50%;
+            grid-column: 1/ -1;
+        }
+    
+    }
+ 
+    header .navegacao-primaria {
+        display: none;
+
+    }
+
+    header i {
+        color: #f7f7f7;
+        font-size: 3rem;
+         }
